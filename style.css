@@ -4,6 +4,9 @@
     font-family:sans-serif;
     scroll-behavior: smooth;
 }
+.navbar{
+    background-color: rgb(24, 33, 83);
+}
 .navbar-brand,.nav-link
 {
     color:white !important;
@@ -22,7 +25,13 @@ vertical-align:baseline;
 letter-spacing:normal;
 font-weight:400;
 }
-
+.drop-a,.dropdown-toggle,.dropdown-toggle:hover,.drop-a:hover{
+    color:white;
+    text-decoration: none;
+}
+.dropdown-menu{
+    background-color:rgb(24, 33, 83) ;
+}
 .animated-icon {
     width: 30px;
     height: 20px;
@@ -92,11 +101,13 @@ font-weight:400;
         transform: rotate(-135deg);
         }
 
+        
+
     .name{
           font-size:30px;
           font-weight: 400;
           letter-spacing: normal;
-          color:crimson;
+          color:rgb(24, 33, 83);
       }
       .intro{
           font-size:18px;
@@ -105,123 +116,198 @@ font-weight:400;
           letter-spacing: normal;
 
       }
-      .about,.education,.certifications,.appreciation,.blogs{
+    
+    .education,.certifications,.blogs,.keyskill{
           background-color:#e9e9e9;
           margin:0px;
           padding:60px 32px;
 
       }
-     .experience,.achievements,.contactme{
+      .about{
+        background-color:#e9e9e9;
+        margin:0px;
+        padding:60px 32px;
+
+      }
+      #home{
+        padding:60px 32px;
+      }
+
+     .experience,.achievements,.contactme,.appreciation,.technicalskill{
         margin:0px;
         padding:60px 32px;
         background-color: #fdfdff;
 
      }
-
-     .keyskill{
-         padding:40px;
-         background-color: #fdfdff;
-
+     .carousel-item{
+         padding:30px;
+         height:200px;
+     }
+     .carousel{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     }
+ 
+     .small{
+         font-size:16px;
+         font-weight: 400;
+         color:black;
+         margin-top:5px;
      }
      .personal-details{
         margin:0px;
         padding:0px;
+        background: linear-gradient(rgb(24, 33, 83,0.5), rgba(24, 33, 83,0.5)), url("images/background.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
      }
-     .profile-card-3 {
-        font-family: 'Open Sans', Arial, sans-serif;
-        width: 100%;
-        text-align: center;
-        border:none;
-      }
-      .profile-card-3 .background-block {
-          width: 100%;
-          height: 200px;
-          overflow: hidden;
-      }
-      .background-block{
-          background-image: url('images/write2.jpg');
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-position: center;
-      }
-      .profile-card-3 .background-block .background {
-        width:100%;
-        vertical-align: top;
-        opacity: 0.9;
-        -webkit-filter: blur(0.5px);
-        filter: blur(0.5px);
-      }
-      .profile-card-3 .card-content {
-        width: 100%;
-        padding: 15px 25px;
-        color:#232323;
-        float:left;
-        background:#fdfdff;
-        height:50%;
-        border-radius:0 0 5px 5px;
-  
-      }
-      .profile-card-3 .card-content::before {
-          content: '';
-          background: #fdfdff;
-          width: 120%;
-          height: 100%;
-          left: 11px;
-          bottom: 51px;
-       
-      }
-      .profile-card-3 .profile {
-        border-radius: 50%;
-        position: absolute;
-        bottom: 30%;
-        left: 50%;
-        max-width: 200px;
-        opacity: 1;
-        box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
-        -webkit-transform: translate(-50%, 0%);
-        transform: translate(-50%, 0%);
-      }
-      .profile-card-3 h2 {
-        margin: 0 0 5px;
-        color:crimson;
-        font-weight: 400;
-        font-size:25px;
-      }
-      .profile-card-3 h2 small {
-        display: block;
-        font-size: 15px;
-        color:black;
-        margin-top:10px;
-      }
-      .profile-card-3 i {
+
+     .profile-body{
+       padding: 30px 32px;
+    }
+   
+   .icon-block i {
         display: inline-block;
           font-size: 16px;
           color: #232323;
           text-align: center;
-          border: 1px solid #232323;
+          border: 1px solid black;
           width: 30px;
           height: 30px;
           line-height: 30px;
           border-radius: 50%;
           margin:0 5px;
       }
-      .profile-card-3 .icon-block{
+    .icon-block{
           float:left;
           width:100%;
       }
-      .profile-card-3 .icon-block a{
+ .icon-block a{
           text-decoration:none;
       }
-      .profile-card-3 i:hover {
-        background-color:#232323;
+  i:hover {
+        background-color: rgb(24, 33, 83);
         color:#fff;
         text-decoration:none;
       }
+
+      body{margin-top:20px;}
+      .timeline {
+        margin: 0 auto;
+          letter-spacing: 0.2px;
+          position: relative;
+          line-height: 1.4em;
+          font-size: 1.03em;
+          padding: 50px;
+          list-style: none;
+          text-align: left;
+          max-width: 40%;
+      }
       
+      @media (max-width: 767px) {
+          .timeline {
+              max-width: 98%;
+              padding: 25px;
+          }
+      }
       
-    
-      .cv{
+      .timeline h1 {
+          font-weight: 300;
+          font-size: 1.4em;
+      }
+      
+      .timeline h2,
+      .timeline h3 {
+          font-weight: 600;
+          font-size: 1rem;
+          margin-bottom: 10px;
+      }
+      
+      .timeline .event {
+          padding-bottom: 25px;
+          margin-bottom: 25px;
+          position: relative;
+      }
+      
+      @media (max-width: 767px) {
+          .timeline .event {
+              padding-top: 30px;
+          }
+      }
+      
+      .timeline .event:last-of-type {
+          padding-bottom: 0;
+          margin-bottom: 0;
+          border: none;
+      }
+      
+      .timeline .event:before,
+      .timeline .event:after {
+          position: absolute;
+          display: block;
+          top: 0;
+      }
+      
+      .timeline .event:before {
+          left: -300px;
+          content: attr(data-date);
+          text-align: right;
+          font-weight: 100;
+          font-size: 0.9em;
+          min-width: 120px;
+      }
+      
+      @media (max-width: 767px) {
+          .timeline .event:before {
+              left: 0px;
+              text-align: left;
+          }
+      }
+      
+      .timeline .event:after {
+          -webkit-box-shadow: 0 0 0 1px rgb(24, 33, 83);
+          box-shadow: 0 0 0 1px  rgb(24, 33, 83);
+          left: -54.8px;
+          background:rgb(24, 33, 83);
+          border-radius: 50%;
+          height: 9px;
+          width: 9px;
+          content: "";
+          top: 5px;
+      }
+      
+      @media (max-width: 767px) {
+          .timeline .event:after {
+              left: -31.8px;
+          }
+      }
+      
+      .rtl .timeline {
+          border-left: 0;
+          text-align: right;
+      }
+      
+      .rtl .timeline .event::before {
+          left: 0;
+          right: -170px;
+      }
+      
+      .rtl .timeline .event::after {
+          left: 0;
+          right: -55.8px;
+      }
+      .experience-card{
+          border:none;
+          padding: 0px;
+          margin: 0px;
+      }
+      .cv,.sub{
           padding :15px 60px;
+          background-color: rgb(24, 33, 83);
+          color:white;  
+      }
+      .btn:hover{
+        color:white;
       }
       .valign{
             display: flex;
@@ -240,49 +326,16 @@ font-weight:400;
           font-weight: 400;
           color:	midnightblue;
       }
-      ul.timeline {
-        list-style-type: none;
-        position: relative;
-    }
-    ul.timeline:before {
-        content: ' ';
-        background: #d4d9df;
-        display: inline-block;
-        position: absolute;
-        left: 29px;
-        width: 2px;
-        height: 100%;
-        z-index: 400;
-    }
-    ul.timeline > li {
-        margin: 20px 0;
-        padding-left: 20px;
-    }
-    ul.timeline > li:before {
-        content: ' ';
-        background: #d9534f;
-        display: inline-block;
-        position: absolute;
-        border-radius: 50%;
-        border: 1px solid white;
-        left: 25px;
-        width: 10px;
-        height: 10px;
-        z-index: 400;
-    }
-    .timeline{
-        font-size:18px;
-        font-weight: 400;
-        line-height: 28.8px;
-        letter-spacing: normal;
-    }
-    .ename{
-        font-weight: 600;
-        color:crimson;
-    }
-    .degree{
-        color:blue;
-    }
+      .set{
+          padding: 15px 32px;
+          margin:0px;
+          
+      }
+      .set-bg{
+          background-color: #fdfdff;
+          padding:15px 32px;
+          
+      }
     .icon{
 
     width: 50px;
@@ -290,17 +343,18 @@ font-weight:400;
     border-radius: 50%;
     }
 .contact{
-    width:100%;
-    height: 100%;
+    width:90%;
+    height: 25rem;
     font-size: 16px;
     margin-left: 10px;  
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius:5px;
+
 }
 .card-text{
     margin-left: 20px;
 }
-.email{
+.link{
 
     text-decoration: none;
     color:black;
@@ -312,7 +366,7 @@ font-weight:400;
     height: 20px;
     border-radius: 50%;
     }
-.blog{
+.style-img,.blog{
     width:300px;
     height:200px;
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -322,17 +376,7 @@ font-weight:400;
     width:100%;
     height:100%;
 }
-.card-title{
-    font-size:18px;
-    font-weight: 400;
-    letter-spacing: normal;
-}
-.ba-0{
-    width:380px;
-    height:300px;
-    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.style-img{
-    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.blog{
+    width:200px;
+    height:200px;
 }

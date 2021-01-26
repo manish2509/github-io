@@ -3,21 +3,73 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="navbar.js"></script>
     </head>
 
     <body>
-        <br><br>
-
         <script>
             AOS.init();
         </script>
+ <!--Start of Navbar-->
+ <nav class="navbar fixed-top navbar-expand-md navbar-dark fixed top">
+    <div class="container-fluid">
+
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="index.html#home">Gifthiya Begum M A</a>
+
+      <!--To display an icon in mobile view-->
+      <button class="navbar-toggler animated-button" type="button" data-toggle="collapse" data-target="#navbar"
+        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="animated-icon"><span></span><span></span><span></span></div>
+      </button>
+
+      <!--Links-->
+      <div class="collapse navbar-collapse" id="navbar">
+
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#experience">EXPERIENCE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#skills">SKILLS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#achievements">ACHIEVEMENTS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">SAMPLES
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="blog.html" class="drop-a">Blogs</a></li>
+              <li><a href="technicalwriting.html" class="drop-a">Technical Writing</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contact">CONTACT</a>
+          </li>
+
+        </ul>
+        <!--End of links-->
+
+      </div>
+
+    </div>
+  </nav>
+  <!--End of Navbar-->
+  <br><br><br>
 
         <div class="container-fluid">
 
@@ -27,12 +79,13 @@
                         <!--Each block of blog-->
                         <div class="card blog">
                             <a href="files/Consumption of Fish in India.pdf" target="_self">
-                                <img width="300px" height="200px" src="images/fish.jpg">
+                                <img width="200px" height="200px" src="images/fish.jpg">
                             </a>
+                            <br>
                             <p class="card-title">Consumption of fish in India</p>
                         </div>
                         <!--End of each blog-->
-                        <br><br>
+                        <br><br><br>
                     </center>
                 </div>
 
@@ -41,12 +94,13 @@
                         <!--Each block of blog-->
                         <div class="card blog">
                             <a href="files/Express JS.pdf" target="_self">
-                                <img width="300px" height="200px" src="images/expressjs.png">
+                                <img width="200px" height="200px" src="images/expressjs.png">
                             </a>
+                            <br>
                             <p class="card-title">Express JS</p>
                         </div>
                         <!--End of each blog-->
-                        <br><br>
+                        <br><br><br>
                     </center>
                 </div>
             </div>
@@ -58,11 +112,11 @@
                     <center>
                         <div class="card blog">
                             <a href="files/Governess.pdf" target="_self">
-                                <img width="300px" height="200px"" src=" images/governess.jpg">
-                            </a>
+                                <img width="200px" height="200px" src=" images/governess.jpg">
+                            </a><br>
                             <p class="card-title">Governess</p>
                         </div>
-                        <br><br>
+                        <br><br><br>
                     </center>
                 </div>
 
@@ -71,8 +125,8 @@
                         <!--Each block of blog-->
                         <div class="card blog">
                             <a href="files/Health Benefits of Eating Rice.pdf" target="_self">
-                                <img width="300px" height="200px" src="images/rice.jpg">
-                            </a>
+                                <img width="200px" height="200px" src="images/rice.jpg">
+                            </a><br>
                             <p class="card-title">Health Benefits of eating Rice</p>
                         </div>
                         <!--End of each blog-->
@@ -81,8 +135,8 @@
 
             </div>
         </div>
-        <br><br>
-        <div class="container-fluid">
+        <br><br><br>
+        <div class="container-fluid" id="contact">
             <div class="row">
 
                 <div class="col-md-6" data-aos="zoom-in">
@@ -90,8 +144,8 @@
                         <!--Each block of blog-->
                         <div class="card blog">
                             <a href="files/What is Ethical Hacking.pdf" target="_self">
-                                <img width="300px" height="200px" src="images/ethicalhacking.jpg">
-                            </a>
+                                <img width="200px" height="200px" src="images/ethicalhacking.jpg">
+                            </a><br>
                             <p class="card-title">What is Ethical Hacking?</p>
                         </div>
                         <!--End of each blog-->
